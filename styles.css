@@ -1,0 +1,9 @@
+div {
+    border-width: 3px;
+    border-style: solid;
+    border-color: red;
+  }
+.title {
+    padding: 3px;
+    margin: 6px;
+}
