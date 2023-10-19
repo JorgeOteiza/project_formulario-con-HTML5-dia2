@@ -1,9 +1,16 @@
 div {
-    border-width: 3px;
+    border-width: 1px;
     border-style: solid;
     border-color: red;
-  }
+}
 .title {
     padding: 3px;
     margin: 6px;
+}
+.codes {
+  margin: 9px;
+}
+.dates {
+  display: inline-block;
+  margin: 9px;
 }
