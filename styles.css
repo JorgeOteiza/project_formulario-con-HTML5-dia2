@@ -3,13 +3,14 @@ div {
     border-style: solid;
     border-color: red;
 }
-.title {
-    padding: 3px;
-    margin: 6px;
-}
 .codes {
   margin: 9px;
 }
+
+.alert {
+  padding: 15px;
+}
+
 .dates {
   display: inline-block;
   margin: 9px;
