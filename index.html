@@ -12,28 +12,29 @@
 <div class="container">
     <div class="title mt-1 mb-1"><h1>Payment form example</h1></div>
 
-<div class="codes d-flex align-items-center">
+<div class="codes">
     <div class="alert alert-danger" role="alert">
         Some fields are missing
       </div>
-      <div class="column1">
-        <div class="d-flex justify-content-end">
-            <form action="/submit" method="post">
-                <fieldset class="mr-3">
-                    <label for="nombre">Card #</label>
-                    <input type="text" id="nombre" name="nombre" required>
-                </fieldset>
-                <fieldset class="mr-3">
-                    <label for="email">CVC #</label>
-                    <input type="email" id="email" name="email" required>
-                </fieldset>
-                <fieldset>
-                    <label for="password">Amount</label>
-                    <input type="password" id="password" name="password" required minlength="8">
-                </fieldset>
-            </form>
-        </div>
+      <div class="d-flex justify-content-end">
+        <form action="/submit" method="post" class="form-container">
+            <fieldset class="fieldset column1">
+                <label for="nombre" class="form-label">Card #</label>
+                <input type="text" id="nombre" name="nombre" class="form-control" required>
+            </fieldset>
+            <fieldset class="fieldset column2">
+                <label for="email" class="form-label">CVC #</label>
+                <input type="email" id="email" name="email" class="form-control" required>
+            </fieldset>
+            <fieldset class="fieldset column3">
+                <label for="password" class="form-label">Amount</label>
+                <input type="password" id="password" name="password" class="form-control" required minlength="8">
+            </fieldset>
+        </form>
+    </div>   
     </div>
+</div>
+    
     
 
 <div class="dates">
