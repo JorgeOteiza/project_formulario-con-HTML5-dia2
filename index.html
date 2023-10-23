@@ -4,62 +4,59 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Formulario HTML5</title>
+    <title>Payment Form Example</title>
     <link rel="stylesheet" href="styles.css"> <!-- Enlaza tu archivo CSS aquí -->
 </head>
 
 <body>
-<div class="container">
-    <div class="title mt-1 mb-1"><h1>Payment form example</h1></div>
+    <div class="container">
+        <div class="title mt-1 mb-1">
+            <h1>Payment Form Example</h1>
+        </div>
 
-<div class="codes">
-    <div class="alert alert-danger" role="alert">
-        Some fields are missing
-      </div>
-      <div class="d-flex justify-content-end">
-        <form action="/submit" method="post" class="form-container">
-            <fieldset class="fieldset column1">
-                <label for="nombre" class="form-label">Card #</label>
-                <input type="text" id="nombre" name="nombre" class="form-control" required>
-            </fieldset>
-            <fieldset class="fieldset column2">
-                <label for="email" class="form-label">CVC #</label>
-                <input type="email" id="email" name="email" class="form-control" required>
-            </fieldset>
-            <fieldset class="fieldset column3">
-                <label for="password" class="form-label">Amount</label>
-                <input type="password" id="password" name="password" class="form-control" required minlength="8">
-            </fieldset>
-        </form>
-    </div>   
+        <div class="codes">
+            <div class="alert alert-danger" role="alert">
+                Some fields are missing
+            </div>
+            <div class="form-container">
+                <form action="/submit" method="post">
+                <div class="container2">
+                    <div class="fieldset column1">
+                        <label for="nombre" class="form-label">Card #</label>
+                        <input type="text" id="nombre" name="nombre" placeholder="XXXXXXXXXXXXXXXXXXXX" class="form-control" required>
+                    </div>
+                    <div class="fieldset column2">
+                        <label for="email" class="form-label">CVC #</label>
+                        <input type="email" id="email" name="email" placeholder="0000" class="form-control" required>
+                    </div>
+                    <div class="fieldset column3">
+                        <label for="password" class="form-label">Amount</label>
+                        <input type="password" id="password" name="password" placeholder="Amount" class="form-control" required minlength="8">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="dates">        
+                <div class="container3">
+                        <label for="telefono">First Name</label>
+                        <input type="tel" id="telefono" name="telefono" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="123-456-7890">
+                        <label for="fecha_nacimiento">Last Name</label>
+                        <input type="date" id="fecha_nacimiento" name="fecha_nacimiento" required>
+                        <label for="archivo">City</label>
+                        <input type="file" id="archivo" name="archivo">
+                        <label for="color">State</label>
+                        <input type="color" id="color" name="color">
+                        <label for="sitio_web">Postal Code</label>
+                        <input type="url" id="sitio_web" name="sitio_web" placeholder="http://www.ejemplo.com">
+                        <label for="comentario">Comentario:</label>
+                        <textarea id="comentario" name="comentario" rows="4" cols="50"></textarea>
+                </div>
+                    <button type="submit" class="btn btn-primary">Enviar</button>
+                </form>
+            </div>
+        </div>
     </div>
-</div>
-    
-    
 
-<div class="dates">
-        <label for="telefono">First Name</label>
-        <input type="tel" id="telefono" name="telefono" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="123-456-7890">
-
-        <label for="fecha_nacimiento">Last Name</label>
-        <input type="date" id="fecha_nacimiento" name="fecha_nacimiento" required>
-
-        <label for="archivo">City</label>
-        <input type="file" id="archivo" name="archivo">
-
-        <label for="color">State</label>
-        <input type="color" id="color" name="color">
-
-        <label for="sitio_web">Postal Code</label>
-        <input type="url" id="sitio_web" name="sitio_web" placeholder="http://www.ejemplo.com">
-
-        <label for="comentario">Comentario:</label>
-        <textarea id="comentario" name="comentario" rows="4" cols="50"></textarea>
-</div>
-
-        <input type="submit" value="Enviar">
-    </form>
-</div>
     <script src="script.js"></script> <!-- Enlaza tu archivo JavaScript aquí -->
 </body>
 
