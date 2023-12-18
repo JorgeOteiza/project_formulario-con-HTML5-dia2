@@ -2,8 +2,8 @@ body {
   font-family: Arial, sans-serif;
   display: flex;
   justify-content: center;
+  align-items: center;
   height: 100vh;
-  margin: 0;
 }
 
 .container {
@@ -15,8 +15,9 @@ body {
   height: 50%;
 }
 
-.container-formulario{
+.container-formulario {
   border: 2px solid rgb(232, 232, 232);
+  border-radius: 3px;
 }
 
 .title h1 {
@@ -47,13 +48,6 @@ body {
   margin-bottom: 20px;
 }
 
-.container2 {
-  display: flex;
-  margin-top: 10px;
-  margin-right: 10px;
-  margin-bottom: 20px;
-  margin-left: 20px;
-}
 
 .fieldset {
   margin-right: 20px;
@@ -76,4 +70,44 @@ body {
   padding-top: 5px;
   padding-bottom: 5px;
   padding-left: 8px;
+  border-radius: 5px;
+  border: 2px solid rgb(232, 232, 232);
+}
+
+.container2 {
+  display: flex;
+  margin-top: 10px;
+  margin-right: auto;
+  margin-bottom: 0;
+  margin-left: 20px;
+}
+
+.container3 {
+  width: 46%;
+  /* Elige el ancho que desees, asegurándote de dejar un pequeño espacio entre ellos */
+  margin-left: 15px;
+  /* Espacio entre los contenedores */
+  display: inline-grid;
+  margin-top: 10px;
+  margin-right: 15px;
+  margin-left: 20px;
+  margin-bottom: 10px;
+}
+
+.container4 {
+  width: 46%;
+  display: inline-grid;
+  margin-top: 10px;
+  margin-right: 15px;
+  margin-left: 15px;
+  margin-bottom: 10px;
+}
+
+.button-validation {
+  display: block;
+  text-align: end;
+  padding-top: 0;
+  padding-right: 15px;
+  padding-bottom: 15px;
+  background-color: rgb(238, 238, 238);
 }
