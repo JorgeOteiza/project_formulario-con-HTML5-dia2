@@ -10,8 +10,9 @@
 
 <body>
     <div class="container">
+        <div class="container-formulario">
         <div class="title mt-1 mb-1">
-            <h1>Payment Form Example</h1>
+            <h1 class="title-form">Payment Form Example</h1>
         </div>
 
         <div class="codes">
@@ -37,24 +38,31 @@
             </div>
         </div>
         <div class="dates">        
-                <div class="container3">
-                        <label for="telefono">First Name</label>
-                        <input type="tel" id="telefono" name="telefono" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="123-456-7890">
-                        <label for="fecha_nacimiento">Last Name</label>
-                        <input type="date" id="fecha_nacimiento" name="fecha_nacimiento" required>
-                        <label for="archivo">City</label>
-                        <input type="file" id="archivo" name="archivo">
-                        <label for="color">State</label>
-                        <input type="color" id="color" name="color">
-                        <label for="sitio_web">Postal Code</label>
-                        <input type="url" id="sitio_web" name="sitio_web" placeholder="http://www.ejemplo.com">
-                        <label for="comentario">Comentario:</label>
-                        <textarea id="comentario" name="comentario" rows="4" cols="50"></textarea>
-                </div>
-                    <button type="submit" class="btn btn-primary">Enviar</button>
-                </form>
+            <div class="conteiner-fluid container3">
+                <label for="Name">First Name</label>
+                <input type="date" id="First_Name" name="First Name">
+                <label for="City">City</label>
+                <input type="date" id="city" name="City">
+                <label for="Card">We accept:</label>
+                <input type="document" id="Card">
             </div>
+            
+            <div class="container-fluid container4">
+                <label for="fecha_nacimiento">Last Name</label>
+                <input type="date" id="Last_Name" name="Last Name">                        
+                <label for="color">State</label>
+                <input type="color" id="color" name="color">
+                <label for="sitio_web">Postal Code</label>
+                <input type="url" id="sitio_web" name="sitio_web" placeholder="http://www.ejemplo.com">
+                <label for="comentario">Comentario:</label>
+                <textarea id="comentario" name="comentario" rows="4" cols="50"></textarea>
+            </div>
+            
+                <button type="submit" class="btn btn-primary">Enviar</button>
+            </form>
         </div>
+    </div>
+    </div>
     </div>
 
     <script src="script.js"></script> <!-- Enlaza tu archivo JavaScript aquí -->
