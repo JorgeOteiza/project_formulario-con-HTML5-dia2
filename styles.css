@@ -4,6 +4,7 @@ body {
   justify-content: center;
   align-items: center;
   height: 100vh;
+  margin: 0;
 }
 
 .container {
@@ -11,8 +12,9 @@ body {
   padding-right: 15%;
   padding-bottom: 20px;
   padding-left: 15%;
+  height: 100%;
   width: 100%;
-  height: 50%;
+  margin: auto;
 }
 
 .container-formulario {
@@ -50,16 +52,23 @@ body {
 
 
 .fieldset {
-  margin-right: 20px;
-  display: grid;
+  flex-basis: calc(33.33% - 15px);
+  margin-right: 15px;
 }
 
-.fieldset.column1 {
-  width: 350px;
+.fieldset.column1 .form-control {
+  width: 70%;
+  /* Ajusta el ancho según tus necesidades para el primer input */
 }
 
-.fieldset.column3 {
-  width: 300px;
+.fieldset.column2 .form-control {
+  width: 50%;
+  /* Ajusta el ancho según tus necesidades para el segundo input */
+}
+
+.fieldset.column3 .form-control {
+  width: 60%;
+  /* Ajusta el ancho según tus necesidades para el tercer input */
 }
 
 .btn-primary {
@@ -68,38 +77,34 @@ body {
 
 .form-control {
   padding-top: 5px;
-  padding-bottom: 5px;
+  margin-bottom: 10px;
   padding-left: 8px;
   border-radius: 5px;
   border: 2px solid rgb(232, 232, 232);
+  width: 100%;
 }
 
 .container2 {
   display: flex;
+  flex-wrap: wrap;
   margin-top: 10px;
-  margin-right: auto;
-  margin-bottom: 0;
-  margin-left: 20px;
+  padding-right: 15px;
+  padding-left: 15px;
 }
 
 .container3 {
-  width: 46%;
-  /* Elige el ancho que desees, asegurándote de dejar un pequeño espacio entre ellos */
-  margin-left: 15px;
-  /* Espacio entre los contenedores */
+  width: 47%;
   display: inline-grid;
-  margin-top: 10px;
-  margin-right: 15px;
-  margin-left: 20px;
+  padding-right: 5px;
+  padding-left: 15px;
   margin-bottom: 10px;
 }
 
 .container4 {
-  width: 46%;
+  width: 47%;
   display: inline-grid;
-  margin-top: 10px;
-  margin-right: 15px;
-  margin-left: 15px;
+  padding-right: 15px;
+  padding-left: 5px;
   margin-bottom: 10px;
 }
 
@@ -110,4 +115,16 @@ body {
   padding-right: 15px;
   padding-bottom: 15px;
   background-color: rgb(238, 238, 238);
+}
+
+.btn-primary {
+  padding: 8px;
+  background-color: rgb(98, 192, 232);
+  border-radius: 5px;
+}
+
+.btn-secondary {
+  padding: 8px;
+  background-color: rgb(182, 180, 180);
+  border-radius: 5px;
 }
