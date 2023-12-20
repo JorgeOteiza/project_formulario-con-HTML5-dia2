@@ -22,22 +22,28 @@
             <div class="form-container">
                 <form action="/submit" method="post">
                 <div class="container2">
-                    <div class="fieldset column1">
+                    <fieldset class="column1">
+                        <legend>Card Details</legend>
                         <label for="nombre" class="form-label">Card #</label>
-                        <input type="text" id="nombre" name="nombre" placeholder="XXXXXXXXXXXXXXXXXXXX" class="form-control" required>
-                    </div>
-                    <div class="fieldset column2">
+                        <input type="text" id="nombre" name="nombre" placeholder="XXXXXXXXXXXXXXXXXXXX"
+                            class="input-field1" required>
+                    </fieldset>
+                    <fieldset class="column2">
+                        <legend>CVC</legend>
                         <label for="email" class="form-label">CVC #</label>
-                        <input type="email" id="email" name="email" placeholder="0000" class="form-control" required>
-                    </div>
-                    <div class="fieldset column3">
+                        <input type="email" id="email" name="email" placeholder="0000" class="input-field2"
+                            required>
+                    </fieldset>
+                    <fieldset class="column3">
+                        <legend>$ Amount</legend>
                         <label for="password" class="form-label">Amount</label>
-                        <input type="password" id="password" name="password" placeholder="Amount" class="form-control" required minlength="8">
-                    </div>
+                        <input type="password" id="password" name="password" placeholder="Amount"
+                            class="input-field3" required minlength="8">
+                    </fieldset>
                 </div>
             </div>
         </div>
-        <div class="dates">        
+        <div class="dates">
             <div class="container-fluid container3">
                 <label for="First_Name">First Name</label>
                 <input type="text" id="First_Name" name="First_Name" class="form-control">
@@ -46,28 +52,36 @@
                 <label for="Card">We accept:</label>
                 <input type="text" id="Card" class="form-control">
             </div>
-            
+
             <div class="container-fluid container4">
                 <label for="Last_Name">Last Name</label>
-                <input type="text" id="Last_Name" name="Last_Name" class="form-control">
-                <label for="State">State</label>
-                <input type="text" id="State" name="State" class="form-control">
-                <label for="Postal_Code">Postal Code</label>
-                <input type="text" id="Postal_Code" name="Postal_Code" placeholder="http://www.example.com" class="form-control">
-                <label for="comentario">Comentario:</label>
-                <textarea id="comentario" name="comentario" rows="4" cols="50"></textarea>
+                <input type="text" id="Last_Name" name="Last_Name" class="form-controlLastName">
+                <div class="State-PostalCode">
+                    <div class="containerState">
+                        <label for="State">State</label>
+                        <input type="text" id="State" name="State" class="form-controlState">
+                    </div>
+                    <div class="containerPostal">
+                        <label for="Postal_Code">Postal Code</label>
+                        <input type="text" id="Postal_Code" name="Postal_Code" class="form-controlPostalCode">
+                    </div>
+                </div>
+                <div class="Comment">
+                    <label for="comentario">Comentario:</label>
+                    <textarea id="comentario" name="comentario" class="textComments" rows="4" cols="50"></textarea>
+                </div>
             </div>
             <div class="button-validation">
-            <button type="submit" class="btn btn-primary">Send</button>
-            <button type="submit" class="btn btn-secondary">Cancel</button>
+                <button type="submit" class="btn btn-primary">Send</button>
+                <button type="submit" class="btn btn-secondary">Cancel</button>
+            </div>
+            </form>
         </div>
-        </form>
-        </div>
     </div>
-    </div>
-    </div>
+</div>
+</div>
 
-    <script src="script.js"></script> <!-- Enlaza tu archivo JavaScript aquí -->
+<script src="script.js"></script> <!-- Enlaza tu archivo JavaScript aquí -->
 </body>
 
 </html>
