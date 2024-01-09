@@ -124,7 +124,7 @@ body {
 .form-control {
   width: 100%;
   padding: 8px;
-  margin-top: 15px;
+  margin-top: 10px;
   margin-bottom: 15px;
   border-radius: 5px;
   border: 2px solid rgb(170, 170, 170);
@@ -148,17 +148,18 @@ body {
 }
 
 .container4 {
-  width: 47%;
+  width: 46%;
   display: inline-grid;
   padding-right: 15px;
-  padding-left: 25px;
+  padding-left: 30px;
   margin-bottom: 50px;
 }
 
 .form-controlLastName {
   width: auto;
   padding: 8px;
-  margin-top: 15px;
+  margin-top: 10px;
+  margin-right: -3px;
   margin-bottom: 15px;
   border-radius: 5px;
   border: 2px solid rgb(170, 170, 170);
@@ -180,8 +181,8 @@ body {
 .form-controlPostalCode {
   width: 93%;
   padding: 8px;
-  margin-top: 15px;
-  margin-right: 75px;
+  margin-top: 10px;
+  margin-right: 60px;
   margin-bottom: 15px;
   border-radius: 5px;
   border: 2px solid rgb(170, 170, 170);
